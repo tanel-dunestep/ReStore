@@ -12,7 +12,7 @@ export const StoreContext = createContext<StoreContextValue | undefined>(undefin
 export function useStoreContext() {
 	const context = useContext(StoreContext);
 	if (context === undefined) {
-		throw Error("Oops - something weng wrong, no provider");
+		throw Error("Oops - something went wrong, no provider");
 	}
 
 	return context;
