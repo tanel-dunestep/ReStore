@@ -10,13 +10,13 @@ import { store } from "./app/store/configureStore";
 export const history: any = createBrowserHistory();
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
+	//<React.StrictMode>
 	<Router history={history}>
-		<React.StrictMode>
-			<Provider store={store}>
-				<App />
-			</Provider>
-		</React.StrictMode>
+		<Provider store={store}>
+			<App />
+		</Provider>
 	</Router>
+	//</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
