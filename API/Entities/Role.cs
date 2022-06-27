@@ -4,10 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 
-namespace API.Entities
+namespace API.Entities;
+public class Role : IdentityRole<int>
 {
-    public class Role : IdentityRole<int>
-    {
 
-    }
 }

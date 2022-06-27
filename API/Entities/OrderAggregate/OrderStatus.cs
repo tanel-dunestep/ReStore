@@ -1,9 +1,8 @@
-namespace API.Entities.OrderAggregate
+namespace API.Entities.OrderAggregate;
+
+public enum OrderStatus
 {
-    public enum OrderStatus
-    {
-        Pending,
-        PaymentReceived,
-        PaymentFailed
-    }
+    Pending,
+    PaymentReceived,
+    PaymentFailed
 }
