@@ -24,6 +24,7 @@ import { fetchCurrentUser } from "../../features/account/accountSlice";
 import PrivateRoute from "./PrivateRoute";
 import OrderPage from "../../features/orders/OrderPage";
 import CheckOutWrapper from "../../features/checkout/CheckoutWrapper";
+import Inventory from "../../features/admin/Inventory";
 
 function App() {
 	//const { setBasket } = useStoreContext();
@@ -74,6 +75,7 @@ function App() {
 							<Route path="/server-error" component={ServerError}></Route>
 							<PrivateRoute path="/checkout" component={CheckOutWrapper} />
 							<PrivateRoute path="/orders" component={OrderPage} />
+							<PrivateRoute roles={["Admin"]} path="/inventory" component={Inventory} />
 							<Route path="/login" component={Login}></Route>
 							<Route path="/register" component={Register}></Route>
 							<Route component={NotFound}></Route>

@@ -4,6 +4,8 @@
 		<UserSecretsId>d8c761f8-7af2-43ad-968d-69028bd0df48</UserSecretsId>
 	</PropertyGroup>
 	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="CloudinaryDotNet" Version="1.18.1" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.6" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.6" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.6">
